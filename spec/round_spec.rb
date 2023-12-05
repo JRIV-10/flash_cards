@@ -20,7 +20,7 @@ RSpec.describe Turn do
         expect(round).to be_instance_of(Round)
     end 
 
-    it "starts with now turns" do 
+    it "starts with no turns" do 
         round = Round.new(@deck)
 
         expect(round.turns).to eq []
